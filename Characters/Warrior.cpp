@@ -40,7 +40,6 @@ void Warrior::Update(float dt) {
     }
 
     m_RigidBody->Update(dt);
-    SDL_Log("%f", dt);
 
     m_Transform->TranslateX(m_RigidBody->Position().X);
     //m_Transform->TranslateY(m_RigidBody->Position().Y);
