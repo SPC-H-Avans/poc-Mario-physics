@@ -1,16 +1,9 @@
 # ninja log v5
-5	1371	6846902562318558	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	1c23fe7ae1e08a4b
-27	995	6846902558557882	CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj	e4e084dcd1b75024
-1056	1603	6846910002641008	poc_mario_physics.exe	81f3dcffc9dfe0d4
-5	1049	6846909997592327	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	90ad773044692191
-21	1387	6846902562478519	CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj	8461d32cc203d9b8
-10	1520	6846902563804582	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	c11a21c5f903657a
-9	1056	6846909997712367	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	c25c06d63cc7496b
-38	1085	6846917863097581	CMakeFiles/poc_mario_physics.dir/Timer/Timer.cpp.obj	442c8ed052cc06db
-32	1090	6846917863087593	CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj	19213abcbcacc1
 7	1541	6846917867707579	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	cfd053679eb87f8
-22	1559	6846917867897592	CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj	41f8cc145dc45e58
+32	1090	6846917863087593	CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj	19213abcbcacc1
+991	1559	6846917912543176	poc_mario_physics.exe	c341d017e648c72
+38	1085	6846917863097581	CMakeFiles/poc_mario_physics.dir/Timer/Timer.cpp.obj	442c8ed052cc06db
 17	1671	6846917869017551	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	90ffc1e95ddfd6fe
+22	1559	6846917867897592	CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj	41f8cc145dc45e58
 13	1672	6846917869027567	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	e4e5fc28f66136c2
 6	990	6846917907468126	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	b72ac940e233808c
-991	1559	6846917912543176	poc_mario_physics.exe	c341d017e648c72
