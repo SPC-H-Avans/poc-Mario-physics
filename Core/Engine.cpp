@@ -6,6 +6,7 @@
 #include <iostream>
 #include "TextureManager.h"
 #include "Input.h"
+#include "Timer.h"
 
 #include "Warrior.h"
 
@@ -51,7 +52,8 @@ void Engine::Quit() {
 }
 
 void Engine::Update() {
-    player->Update(0);
+    float deltaTime = Timer::GetInstance()->GetDeltaTime();
+    player->Update(deltaTime);
 }
 
 void Engine::Render() {
