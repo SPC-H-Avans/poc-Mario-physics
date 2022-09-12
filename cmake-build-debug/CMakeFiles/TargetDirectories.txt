@@ -1,0 +1,3 @@
+C:/Users/jhpar/Documents/GitHub/poc-mario-physics/cmake-build-debug/CMakeFiles/poc_mario_physics.dir
+C:/Users/jhpar/Documents/GitHub/poc-mario-physics/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jhpar/Documents/GitHub/poc-mario-physics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
