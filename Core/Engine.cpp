@@ -44,7 +44,6 @@ void Engine::Quit() {
 }
 
 void Engine::Update() {
-    SDL_Log("Update");
 }
 
 void Engine::Render() {

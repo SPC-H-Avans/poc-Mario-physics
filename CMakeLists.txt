@@ -15,9 +15,9 @@ link_directories(${SDL2_LIB_DIR})
 include_directories(${SDL2_IMAGE_INCLUDE_DIR})
 link_directories(${SDL2_IMAGE_LIB_DIR})
 
-include_directories(Core Graphics)
+include_directories(Core Graphics Physics)
 
-add_executable(poc_mario_physics main.cpp Core/Engine.cpp Core/Engine.h Graphics/TextureManager.cpp Graphics/TextureManager.h)
+add_executable(poc_mario_physics main.cpp Core/Engine.cpp Core/Engine.h Graphics/TextureManager.cpp Graphics/TextureManager.h Physics/Vector2D.h Physics/Transform.h)
 
 target_link_libraries(poc_mario_physics SDL2main SDL2 SDL2_image)
 
