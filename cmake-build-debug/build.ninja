@@ -56,6 +56,13 @@ build CMakeFiles/poc_mario_physics.dir/main.cpp.obj: CXX_COMPILER__poc_mario_phy
   OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
   OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir
 
+build CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj: CXX_COMPILER__poc_mario_physics_Debug C$:/Users/jhpar/Documents/GitHub/poc-mario-physics/Core/Engine.cpp || cmake_object_order_depends_target_poc_mario_physics
+  DEP_FILE = CMakeFiles\poc_mario_physics.dir\Core\Engine.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/include
+  OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
+  OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir\Core
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target poc_mario_physics
@@ -64,7 +71,7 @@ build CMakeFiles/poc_mario_physics.dir/main.cpp.obj: CXX_COMPILER__poc_mario_phy
 #############################################
 # Link the executable poc_mario_physics.exe
 
-build poc_mario_physics.exe: CXX_EXECUTABLE_LINKER__poc_mario_physics_Debug CMakeFiles/poc_mario_physics.dir/main.cpp.obj
+build poc_mario_physics.exe: CXX_EXECUTABLE_LINKER__poc_mario_physics_Debug CMakeFiles/poc_mario_physics.dir/main.cpp.obj CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lSDL2main  -lSDL2  -static  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/lib/x64

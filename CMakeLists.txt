@@ -9,7 +9,7 @@ set(SDL2_LIB_DIR ./libs/SDL/lib/x64)
 include_directories(${SDL2_INCLUDE_DIR})
 link_directories(${SDL2_LIB_DIR})
 
-add_executable(poc_mario_physics main.cpp)
+add_executable(poc_mario_physics main.cpp Core/Engine.cpp Core/Engine.h)
 
 target_link_libraries(poc_mario_physics SDL2main SDL2)
 
