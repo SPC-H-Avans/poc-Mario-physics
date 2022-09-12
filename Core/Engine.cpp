@@ -6,7 +6,10 @@
 #include <iostream>
 #include "TextureManager.h"
 
+#include "Warrior.h"
+
 Engine* Engine::s_Instance = nullptr;
+Warrior* player = nullptr;
 
 bool Engine::Init() {
     if(SDL_Init(SDL_INIT_VIDEO) != 0 && IMG_Init(IMG_INIT_PNG | IMG_INIT_PNG) != 0){
@@ -27,6 +30,8 @@ bool Engine::Init() {
     }
 
     TextureManager::GetInstance()->Load("tree", "Assets/tree.png");
+    TextureManager::GetInstance()->Load("player", "Assets/character/anim/idle/spritesheet.png");
+    player = new Warrior(new Properties("player", 100, 200, 131, 142));
     return m_IsRunning = true;
 }
 
@@ -44,12 +49,15 @@ void Engine::Quit() {
 }
 
 void Engine::Update() {
+    player->Update(0);
 }
 
 void Engine::Render() {
     SDL_SetRenderDrawColor(m_Renderer, 124, 210, 254, 255);
     SDL_RenderClear(m_Renderer);
-    TextureManager::GetInstance()->Draw("tree", 100, 100, 800, 684);
+
+    player->Draw();
+
     SDL_RenderPresent(m_Renderer);
 }
 
