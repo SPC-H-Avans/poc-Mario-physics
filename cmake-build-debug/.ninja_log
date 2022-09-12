@@ -1,9 +1,7 @@
 # ninja log v5
 5	1225	6846791809677822	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	f4ca886ef8fa68c9
-1027	1651	6846792441746857	poc_mario_physics.exe	c585d8a6b2b06a6e
-4	1026	6846792436226407	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8c4e647ed8314331
-14	1319	6846791810628342	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	fa4d49e92c82bdb3
-5	897	6846793924830894	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8c4e647ed8314331
-898	1407	6846793929407590	poc_mario_physics.exe	c585d8a6b2b06a6e
-4	938	6846796189117766	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8c4e647ed8314331
 939	1449	6846796193648812	poc_mario_physics.exe	c585d8a6b2b06a6e
+4	938	6846796189117766	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8c4e647ed8314331
+14	1319	6846791810628342	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	fa4d49e92c82bdb3
+5	1357	6846849758313401	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8c4e647ed8314331
+1357	2109	6846849765236864	poc_mario_physics.exe	c585d8a6b2b06a6e
