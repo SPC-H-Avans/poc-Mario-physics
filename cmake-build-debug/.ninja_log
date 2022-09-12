@@ -1,18 +1,12 @@
 # ninja log v5
-5	1225	6846791809677822	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	f4ca886ef8fa68c9
-1357	2109	6846849765236864	poc_mario_physics.exe	c585d8a6b2b06a6e
-5	1357	6846849758313401	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8c4e647ed8314331
-14	1319	6846791810628342	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	fa4d49e92c82bdb3
 6	1560	6846863279628489	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	cb1e13f23a2e618a
-18	1684	6846863280883644	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	3be05c4ed7932d3c
-13	1713	6846863281158791	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	887bbfb59f33e0cf
-6	1195	6846864449586437	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	887bbfb59f33e0cf
-6	1139	6846864963164508	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	887bbfb59f33e0cf
-4	982	6846865587151698	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	b2e66b58037cdb72
-983	1544	6846865592237363	poc_mario_physics.exe	32b02dad0aeefb41
-5	1030	6846866751703379	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	887bbfb59f33e0cf
-1031	1584	6846866756645461	poc_mario_physics.exe	32b02dad0aeefb41
-4	949	6846866866747979	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	b2e66b58037cdb72
-950	1506	6846866871554508	poc_mario_physics.exe	32b02dad0aeefb41
-6	977	6846866928195076	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	b2e66b58037cdb72
 978	1516	6846866933001288	poc_mario_physics.exe	32b02dad0aeefb41
+5	1030	6846866751703379	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	887bbfb59f33e0cf
+18	1684	6846863280883644	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	3be05c4ed7932d3c
+6	977	6846866928195076	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	b2e66b58037cdb72
+27	1560	6846873321463146	CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj	c2837de838233a7b
+6	1618	6846873322153116	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	2444272e3b34130f
+16	1726	6846873323253090	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	6dd2791e9decf6ab
+21	1736	6846873323363111	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	3501630d1857a0b2
+11	1755	6846873323553359	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	6efd65263b999ad2
+1756	2342	6846873328771787	poc_mario_physics.exe	ae1903858e39af33

@@ -6,6 +6,7 @@
 #define POC_MARIO_PHYSICS_WARRIOR_H
 
 #include "Character.h"
+#include "Animation.h"
 
 class Warrior: public Character {
 public:
@@ -16,8 +17,7 @@ public:
     virtual void Update(float dt);
 
 private:
-    int m_Row, m_Frame, m_FrameCount;
-    int m_AnimSpeed;
+    Animation* m_Animation;
 
 };
 
