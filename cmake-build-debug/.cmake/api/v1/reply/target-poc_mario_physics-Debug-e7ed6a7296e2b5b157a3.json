@@ -30,31 +30,43 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 10,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 14,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
 				"line" : 16,
 				"parent" : 0
 			},
 			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 9,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -74,8 +86,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "C:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL_Image/include"
 				}
 			],
 			"language" : "CXX",
@@ -114,16 +130,26 @@
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "-LC:\\Users\\jhpar\\Documents\\GitHub\\poc-mario-physics\\.\\libs\\SDL_Image\\lib\\x64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 4,
 				"fragment" : "-lSDL2main",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lSDL2",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
+				"fragment" : "-lSDL2_image",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
 				"fragment" : "-static",
 				"role" : "libraries"
 			},
