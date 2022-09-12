@@ -1,11 +1,16 @@
 # ninja log v5
-6	1711	6846958340113627	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	13b481235f6e668a
-19	1324	6846958336232296	CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj	c5b7d0efb26d242d
+7	1859	6846967595514533	CMakeFiles/poc_mario_physics.dir/main.cpp.obj	694ef7c63264f0fd
+33	1441	6846967591318604	CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj	49fac48df4722174
 1839	2485	6846958346607007	poc_mario_physics.exe	87fb36da3204f61
-49	1290	6846958335882320	CMakeFiles/poc_mario_physics.dir/Timer/Timer.cpp.obj	1987387e530933c9
-15	1818	6846958341172627	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	8e6f23b8c8820652
-28	1667	6846958339668422	CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj	71b6c87543a124d
-11	1805	6846958341052609	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	5116840481732dbf
-24	1839	6846958341407765	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	d424670d814211b
-43	940	6846958332359014	CMakeFiles/poc_mario_physics.dir/Map/MapParser.cpp.obj	8a246ab376dfc451
-34	1227	6846958335229528	CMakeFiles/poc_mario_physics.dir/Map/TileLayer.cpp.obj	fb1ba6a8fc479a46
+76	1455	6846967591458611	CMakeFiles/poc_mario_physics.dir/Timer/Timer.cpp.obj	80cfa6e8d65de344
+12	1996	6846967596903690	CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj	5cac86b5ccb8221
+23	1844	6846967595344552	CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj	13c9f08bb3b0b643
+17	1930	6846967596230625	CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj	fccff9b7da2512f6
+44	2007	6846967597004106	CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj	8edc94ae398b24fd
+5	822	6846982949276278	CMakeFiles/poc_mario_physics.dir/Map/MapParser.cpp.obj	d48a03e949b6902d
+10	534	6846975190409469	CMakeFiles/poc_mario_physics.dir/Map/TileLayer.cpp.obj	c529b2aa06a0ff2e
+6	588	6846986451193060	CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxml.cpp.obj	e0f3ccf04cd448
+14	140	6846986804745228	CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinystr.cpp.obj	3b0a63b8fe28372b
+10	442	6846986807766454	CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxmlerror.cpp.obj	e9adcabbe9649c83
+6	561	6846986808956849	CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxmlparser.cpp.obj	1d87913e28006ec4
+561	1290	6846986815114485	poc_mario_physics.exe	5c298f512c891c9a

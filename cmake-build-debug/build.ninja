@@ -112,6 +112,34 @@ build CMakeFiles/poc_mario_physics.dir/Map/MapParser.cpp.obj: CXX_COMPILER__poc_
   OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
   OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir\Map
 
+build CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxml.cpp.obj: CXX_COMPILER__poc_mario_physics_Debug C$:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML/tinyxml.cpp || cmake_object_order_depends_target_poc_mario_physics
+  DEP_FILE = CMakeFiles\poc_mario_physics.dir\libs\TinyXML\tinyxml.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL_Image/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Core -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Graphics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Physics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Object -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Characters -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Animation -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Inputs -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Timer -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Map -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML
+  OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
+  OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir\libs\TinyXML
+
+build CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxmlerror.cpp.obj: CXX_COMPILER__poc_mario_physics_Debug C$:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML/tinyxmlerror.cpp || cmake_object_order_depends_target_poc_mario_physics
+  DEP_FILE = CMakeFiles\poc_mario_physics.dir\libs\TinyXML\tinyxmlerror.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL_Image/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Core -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Graphics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Physics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Object -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Characters -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Animation -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Inputs -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Timer -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Map -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML
+  OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
+  OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir\libs\TinyXML
+
+build CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxmlparser.cpp.obj: CXX_COMPILER__poc_mario_physics_Debug C$:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML/tinyxmlparser.cpp || cmake_object_order_depends_target_poc_mario_physics
+  DEP_FILE = CMakeFiles\poc_mario_physics.dir\libs\TinyXML\tinyxmlparser.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL_Image/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Core -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Graphics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Physics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Object -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Characters -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Animation -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Inputs -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Timer -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Map -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML
+  OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
+  OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir\libs\TinyXML
+
+build CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinystr.cpp.obj: CXX_COMPILER__poc_mario_physics_Debug C$:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML/tinystr.cpp || cmake_object_order_depends_target_poc_mario_physics
+  DEP_FILE = CMakeFiles\poc_mario_physics.dir\libs\TinyXML\tinystr.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL_Image/include -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Core -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Graphics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Physics -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Object -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Characters -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Animation -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Inputs -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Timer -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/Map -IC:/Users/jhpar/Documents/GitHub/poc-mario-physics/libs/TinyXML
+  OBJECT_DIR = CMakeFiles\poc_mario_physics.dir
+  OBJECT_FILE_DIR = CMakeFiles\poc_mario_physics.dir\libs\TinyXML
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target poc_mario_physics
@@ -120,7 +148,7 @@ build CMakeFiles/poc_mario_physics.dir/Map/MapParser.cpp.obj: CXX_COMPILER__poc_
 #############################################
 # Link the executable poc_mario_physics.exe
 
-build poc_mario_physics.exe: CXX_EXECUTABLE_LINKER__poc_mario_physics_Debug CMakeFiles/poc_mario_physics.dir/main.cpp.obj CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj CMakeFiles/poc_mario_physics.dir/Timer/Timer.cpp.obj CMakeFiles/poc_mario_physics.dir/Map/TileLayer.cpp.obj CMakeFiles/poc_mario_physics.dir/Map/MapParser.cpp.obj
+build poc_mario_physics.exe: CXX_EXECUTABLE_LINKER__poc_mario_physics_Debug CMakeFiles/poc_mario_physics.dir/main.cpp.obj CMakeFiles/poc_mario_physics.dir/Core/Engine.cpp.obj CMakeFiles/poc_mario_physics.dir/Graphics/TextureManager.cpp.obj CMakeFiles/poc_mario_physics.dir/Characters/Warrior.cpp.obj CMakeFiles/poc_mario_physics.dir/Animation/Animation.cpp.obj CMakeFiles/poc_mario_physics.dir/Inputs/Input.cpp.obj CMakeFiles/poc_mario_physics.dir/Timer/Timer.cpp.obj CMakeFiles/poc_mario_physics.dir/Map/TileLayer.cpp.obj CMakeFiles/poc_mario_physics.dir/Map/MapParser.cpp.obj CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxml.cpp.obj CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxmlerror.cpp.obj CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinyxmlparser.cpp.obj CMakeFiles/poc_mario_physics.dir/libs/TinyXML/tinystr.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lSDL2main  -lSDL2  -lSDL2_image  -static  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL/lib/x64   -LC:/Users/jhpar/Documents/GitHub/poc-mario-physics/./libs/SDL_Image/lib/x64

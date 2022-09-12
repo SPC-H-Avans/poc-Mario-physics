@@ -17,7 +17,7 @@ public:
     bool Load();
     void Clean();
 
-    inline GameMap* GetMaps();
+    inline GameMap* GetMaps(std::string id) { return m_Maps[id]; }
 
     inline static MapParser* GetInstance() {
         if(s_pInstance == 0) {
@@ -33,7 +33,7 @@ private:
 
     bool Parse(std::string id, std::string source);
     Tileset ParseTileset(TiXmlElement* xmlTileset);
-    TileLayer* ParseTileLayer(TiXmlElement* xmlTileLayer, Tileset tileset, int tileSize, int rowCount, int colCount);
+    TileLayer* ParseTileLayer(TiXmlElement* xmlTileLayer, TilesetList tileset, int tileSize, int rowCount, int colCount);
 };
 
 
