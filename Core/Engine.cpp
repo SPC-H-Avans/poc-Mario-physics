@@ -32,6 +32,7 @@ bool Engine::Init() {
 
     TextureManager::GetInstance()->Load("tree", "Assets/tree.png");
     TextureManager::GetInstance()->Load("player", "Assets/character/anim/idle/spritesheet.png");
+    TextureManager::GetInstance()->Load("player_run", "Assets/character/anim/run/spritesheet.png");
     player = new Warrior(new Properties("player", 100, 200, 131, 142));
     return m_IsRunning = true;
 }
@@ -50,9 +51,6 @@ void Engine::Quit() {
 }
 
 void Engine::Update() {
-    if(Input::GetInstance()->GetKeyDown(SDL_SCANCODE_A)){
-        SDL_Log("A is pressed");
-    }
     player->Update(0);
 }
 
