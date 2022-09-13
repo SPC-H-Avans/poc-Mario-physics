@@ -10,30 +10,38 @@
 
 class Engine {
 
-    public:
-        static Engine* GetInstance(){
-            return s_Instance = (s_Instance != nullptr)? s_Instance : new Engine();
-        }
+public:
+    static Engine *GetInstance() {
+        return s_Instance = (s_Instance != nullptr) ? s_Instance : new Engine();
+    }
 
-        bool Init();
-        bool Clean();
-        void Quit();
+    bool Init();
 
-        void Update();
-        void Render();
-        void Events();
+    bool Clean();
 
-        inline bool IsRunning(){return m_IsRunning;}
-        inline SDL_Renderer* GetRenderer(){return m_Renderer;}
+    void Quit();
 
-    private:
-        Engine(){}
-        bool m_IsRunning;
+    void Update();
 
-        GameMap* m_LevelMap;
-        SDL_Window* m_Window;
-        SDL_Renderer* m_Renderer;
-        static Engine* s_Instance;
+    void Render();
+
+    void Events();
+
+    inline bool IsRunning() { return m_IsRunning; }
+
+    inline SDL_Renderer *GetRenderer() { return m_Renderer; }
+
+    inline GameMap *GetMap() { return m_LevelMap; }
+
+private:
+    Engine() {}
+
+    bool m_IsRunning;
+
+    GameMap *m_LevelMap;
+    SDL_Window *m_Window;
+    SDL_Renderer *m_Renderer;
+    static Engine *s_Instance;
 };
 
 #endif // ENGINE_H

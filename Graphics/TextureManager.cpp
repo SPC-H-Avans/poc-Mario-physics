@@ -4,6 +4,8 @@
 
 TextureManager *TextureManager::s_Instance = nullptr;
 
+#define PARALEX_SPEED 0.5f
+
 bool TextureManager::Load(std::string id, std::string filename) {
 
     SDL_Surface *surface = IMG_Load(filename.c_str());
@@ -24,7 +26,7 @@ bool TextureManager::Load(std::string id, std::string filename) {
 
 void TextureManager::Draw(std::string id, int x, int y, int width, int heigt, SDL_RendererFlip flip) {
     SDL_Rect srcRect = {0, 0, width, heigt};
-    Vector2D cam = Camera::getInstance()->GetPosition() * 0.5f;
+    Vector2D cam = Camera::getInstance()->GetPosition() * PARALEX_SPEED;
 
     SDL_Rect dstRect = {static_cast<int>(x - cam.X), static_cast<int>(y - cam.Y), width, heigt};
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
