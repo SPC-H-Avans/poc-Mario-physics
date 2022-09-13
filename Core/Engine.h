@@ -6,6 +6,7 @@
 #define POC_MARIO_PHYSICS_ENGINE_H
 
 #include "SDL.h"
+#include "GameMap.h"
 #include <SDL_image.h>
 
 #define SCREEN_WIDTH 960
@@ -33,6 +34,7 @@ private:
     Engine(){}
     bool m_IsRunning;
 
+    GameMap* m_LevelMap;
     SDL_Window* m_Window;
     SDL_Renderer* m_Renderer;
 

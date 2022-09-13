@@ -45,4 +45,6 @@ void Warrior::Update(float dt) {
     //m_Transform->TranslateY(m_RigidBody->Position().Y);
 
     m_Animation->Update();
+
+    std::cout << m_Transform->X << " " << m_Transform->Y <<  std::endl;
 }

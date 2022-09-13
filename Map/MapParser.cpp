@@ -4,12 +4,18 @@
 
 #include "MapParser.h"
 
+MapParser* MapParser::s_pInstance = nullptr;
+
 bool MapParser::Load() {
     return Parse("level1", "Assets/Maps/map.tmx");
 }
 
 void MapParser::Clean() {
-
+    std::map<std::string, GameMap*>::iterator it;
+    for(it = m_Maps.begin(); it != m_Maps.end(); ++it){
+        it->second = nullptr;
+    }
+    m_Maps.clear();
 }
 
 bool MapParser::Parse(std::string id, std::string source) {
@@ -61,6 +67,7 @@ Tileset MapParser::ParseTileset(TiXmlElement *xmlTileset) {
     xmlTileset->Attribute("tilewidth", &tileset.TileSize);
 
     TiXmlElement* xmlImage = xmlTileset->FirstChildElement();
+    std::cout << "Image source: " << xmlImage->Attribute("source") << std::endl;
     tileset.Source = xmlImage->Attribute("source");
     return tileset;
 }
@@ -81,8 +88,8 @@ MapParser::ParseTileLayer(TiXmlElement *xmlTileLayer, TilesetList tileset, int t
 
     TileMap tileMap(rowCount, std::vector<int>(colCount, 0));
 
-    for(int row = 0; row < rowCount; ++row) {
-        for(int col = 0; col < colCount; ++col) {
+    for(int row = 0; row < rowCount; row++) {
+        for(int col = 0; col < colCount; col++) {
             std::getline(inputString, id, ',');
             std::stringstream convertor(id);
             convertor >> tileMap[row][col];

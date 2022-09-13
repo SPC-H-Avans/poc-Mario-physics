@@ -7,8 +7,9 @@
 #include "TextureManager.h"
 #include "Input.h"
 #include "Timer.h"
-
+#include "MapParser.h"
 #include "Warrior.h"
+#include <iostream>
 
 Engine* Engine::s_Instance = nullptr;
 Warrior* player = nullptr;
@@ -19,7 +20,9 @@ bool Engine::Init() {
         return false;
     }
 
-    m_Window = SDL_CreateWindow("Mario Physics", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+    SDL_WindowFlags  windowFlags = (SDL_WindowFlags)(SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
+
+    m_Window = SDL_CreateWindow("Mario Physics", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, windowFlags);
     if(!m_Window){
         SDL_Log("Failed to create window: %s", SDL_GetError());
         return false;
@@ -31,7 +34,12 @@ bool Engine::Init() {
         return false;
     }
 
-    TextureManager::GetInstance()->Load("tree", "Assets/tree.png");
+    if(!MapParser::GetInstance()->Load()){
+        std::cout << "Failed to load map" << std::endl;
+    }
+
+    m_LevelMap = MapParser::GetInstance()->GetMap("level1");
+
     TextureManager::GetInstance()->Load("player", "Assets/character/anim/idle/spritesheet.png");
     TextureManager::GetInstance()->Load("player_run", "Assets/character/anim/run/spritesheet.png");
     player = new Warrior(new Properties("player", 100, 200, 131, 142));
@@ -53,6 +61,7 @@ void Engine::Quit() {
 
 void Engine::Update() {
     float deltaTime = Timer::GetInstance()->GetDeltaTime();
+    m_LevelMap->Update();
     player->Update(deltaTime);
 }
 
@@ -60,6 +69,7 @@ void Engine::Render() {
     SDL_SetRenderDrawColor(m_Renderer, 124, 210, 254, 255);
     SDL_RenderClear(m_Renderer);
 
+    m_LevelMap->Render();
     player->Draw();
 
     SDL_RenderPresent(m_Renderer);
