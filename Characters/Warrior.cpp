@@ -36,14 +36,17 @@ void Warrior::Update(float dt) {
     m_Animation->SetProps("player", 1, 6, 100);
     m_RigidBody->UnSetForce();
 
+    SDL_RendererFlip flip = SDL_FLIP_NONE;
+
     if (Input::GetInstance()->GetKeyDown(SDL_SCANCODE_A)) {
+        flip = SDL_FLIP_HORIZONTAL;
         m_RigidBody->ApplyForceX(5 * BACKWARD);
-        m_Animation->SetProps("player_run", 1, 8, 100, SDL_FLIP_HORIZONTAL);
+        m_Animation->SetProps("player_run", 1, 8, 100, flip);
     }
 
     if (Input::GetInstance()->GetKeyDown(SDL_SCANCODE_D)) {
         m_RigidBody->ApplyForceX(5 * FORWARD);
-        m_Animation->SetProps("player_run", 1, 8, 100);
+        m_Animation->SetProps("player_run", 1, 8, 100, flip);
     }
 
     // Jump
@@ -84,7 +87,7 @@ void Warrior::Update(float dt) {
     }
 
     if (m_IsJumping || !m_IsGrounded) {
-        m_Animation->SetProps("player_jump", 1, 2, 150);
+        m_Animation->SetProps("player_jump", 1, 2, 150, flip);
     }
 
     m_Origin->X = m_Transform->X + m_Width / 2;
