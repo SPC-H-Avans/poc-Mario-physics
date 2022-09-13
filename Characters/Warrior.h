@@ -1,28 +1,23 @@
-//
-// Created by jhpar on 12-9-2022.
-//
-
-#ifndef POC_MARIO_PHYSICS_WARRIOR_H
-#define POC_MARIO_PHYSICS_WARRIOR_H
+#ifndef WARRIOR_H
+#define WARRIOR_H
 
 #include "Character.h"
 #include "Animation.h"
 #include "RigidBody.h"
 
-class Warrior: public Character {
-public:
-    Warrior(Properties* props);
+class Warrior: public Character{
 
-    virtual void Draw();
-    virtual void Clean();
-    virtual void Update(float dt);
+    public:
+        Warrior(Properties* props);
 
-private:
-    Animation* m_Animation;
-    RigidBody* m_RigidBody;
+        virtual void Draw();
+        virtual void Clean();
+        virtual void Update(float dt);
 
+    private:
+        Animation* m_Animation;
+        RigidBody* m_RigidBody;
 
 };
 
-
-#endif //POC_MARIO_PHYSICS_WARRIOR_H
+#endif // WARRIOR_H

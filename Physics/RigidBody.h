@@ -1,14 +1,9 @@
-//
-// Created by jhpar on 12-9-2022.
-//
-
-#ifndef POC_MARIO_PHYSICS_RIGIDBODY_H
-#define POC_MARIO_PHYSICS_RIGIDBODY_H
-
+#ifndef RIGIDBODY_H
+#define RIGIDBODY_H
 
 #include "Vector2D.h"
 
-#define UNIT_MASS 1.0f
+#define UNI_MASS 1.0f
 #define GRAVITY 9.8f
 
 #define FORWARD 1
@@ -17,51 +12,55 @@
 #define UPWARD -1
 #define DOWNWARD 1
 
+
 class RigidBody {
-public:
-    RigidBody() {
-        m_Mass = UNIT_MASS;
-        m_Gravity = GRAVITY;
-    }
-    // Setter gravity and mass
-    inline void SetMass(float mass) { m_Mass = mass; }
-    inline void SetGravity(float gravity) { m_Gravity = gravity; }
 
-    // Force
-    inline void ApplyForce(Vector2D force) { m_Force = force; }
-    inline void ApplyForceX(float Fx) { m_Force.X = Fx; }
-    inline void ApplyForceY(float Fy) { m_Force.Y = Fy; }
-    inline void UnSetForce() { m_Force = Vector2D(0, 0); }
+    public:
+        RigidBody() {
+            m_Mass = UNI_MASS;
+            m_Gravity = GRAVITY;
+        }
 
-    // Friction
-    inline void ApplyFriction(Vector2D friction) { m_Friction = friction; }
-    inline void UnSetFriction() { m_Friction = Vector2D(0, 0); }
+        // Setter Gravity & Mass
+        inline void SetMass(float mass){m_Mass = mass;}
+        inline void SetFravity(float gravity){m_Gravity = gravity;}
 
-    // Getters
-    inline float GetMass() { return m_Mass; }
-    inline Vector2D Position() { return m_Position; }
-    inline Vector2D Velocity() { return m_Velocity; }
-    inline Vector2D Acceleration() { return m_Acceleration; }
+        // Force
+        inline void ApplyForce(Vector2D F){m_Force = F;}
+        inline void ApplyForceX(float Fx){m_Force.X = Fx;}
+        inline void ApplyForceY(float Fy){m_Force.Y = Fy;}
+        inline void UnSetForce(){m_Force = Vector2D(0,0);}
 
-    // Update
-    void Update(float dt){
-        m_Acceleration.X = (m_Force.X + m_Friction.X) / m_Mass;
-        m_Acceleration.Y = m_Gravity + m_Force.Y/m_Mass;
-        m_Velocity = m_Acceleration*dt;
-        m_Position = m_Velocity*dt;
-    }
+        // Friction
+        inline void ApplyFriction(Vector2D Fr){m_Friction = Fr;}
+        inline void UnSetFriction(){m_Friction = Vector2D(0,0);}
 
-private:
-    float m_Mass;
-    float m_Gravity;
+        // Getters
+        inline float GetMass(){return m_Mass;}
+        inline Vector2D Position(){return m_Position;}
+        inline Vector2D Veclocity(){return m_Velocity;}
+        inline Vector2D Accelaration(){return m_Accelaration;}
 
-    Vector2D m_Force;
-    Vector2D m_Friction;
 
-    Vector2D m_Position;
-    Vector2D m_Velocity;
-    Vector2D m_Acceleration;
+        // update methode
+        void Update(float dt){
+            m_Accelaration.X = (m_Force.X + m_Friction.X)/m_Mass;
+            m_Accelaration.Y = m_Gravity + m_Force.Y/m_Mass;
+            m_Velocity = m_Accelaration*dt;
+            m_Position = m_Velocity*dt;
+        }
+
+    private:
+        float m_Mass;
+        float m_Gravity;
+
+        Vector2D m_Force;
+        Vector2D m_Friction;
+
+        Vector2D m_Position;
+        Vector2D m_Velocity;
+        Vector2D m_Accelaration;
+
 };
 
-
-#endif //POC_MARIO_PHYSICS_RIGIDBODY_H
+#endif // RIGIDBODY_H

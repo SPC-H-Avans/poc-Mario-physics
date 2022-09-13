@@ -1,16 +1,12 @@
-//
-// Created by jhpar on 12-9-2022.
-//
+#ifndef LAYER_H
+#define LAYER_H
 
-#ifndef POC_MARIO_PHYSICS_LAYER_H
-#define POC_MARIO_PHYSICS_LAYER_H
-
+// interface for all layer type: image- and tile layer
 
 class Layer {
-public:
-    virtual void Render() = 0;
-    virtual void Update() = 0;
+    public:
+        virtual void Render() = 0;
+        virtual void Update() = 0;
 };
 
-
-#endif //POC_MARIO_PHYSICS_LAYER_H
+#endif // LAYER_H

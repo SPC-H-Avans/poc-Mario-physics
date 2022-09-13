@@ -1,47 +1,39 @@
-//
-// Created by jhpar on 12-9-2022.
-//
-
-#ifndef POC_MARIO_PHYSICS_ENGINE_H
-#define POC_MARIO_PHYSICS_ENGINE_H
+#ifndef ENGINE_H
+#define ENGINE_H
 
 #include "SDL.h"
+#include "SDL_image.h"
 #include "GameMap.h"
-#include <SDL_image.h>
 
 #define SCREEN_WIDTH 960
-#define SCREEN_HEIGHT 640
-
+#define SCREN_HEIGHT 640
 
 class Engine {
 
-public:
-    static Engine* GetInstance(){
-        return s_Instance = (s_Instance != nullptr) ? s_Instance : new Engine();
-    }
-    bool Init();
-    bool Clean();
-    void Quit();
+    public:
+        static Engine* GetInstance(){
+            return s_Instance = (s_Instance != nullptr)? s_Instance : new Engine();
+        }
 
-    void Update();
-    void Render();
-    void Events();
+        bool Init();
+        bool Clean();
+        void Quit();
 
-    inline bool IsRunning() { return m_IsRunning; }
-    inline SDL_Renderer* GetRenderer() { return m_Renderer; }
+        void Update();
+        void Render();
+        void Events();
 
-private:
-    Engine(){}
-    bool m_IsRunning;
+        inline bool IsRunning(){return m_IsRunning;}
+        inline SDL_Renderer* GetRenderer(){return m_Renderer;}
 
-    GameMap* m_LevelMap;
-    SDL_Window* m_Window;
-    SDL_Renderer* m_Renderer;
+    private:
+        Engine(){}
+        bool m_IsRunning;
 
-    static Engine* s_Instance;
-
-
+        GameMap* m_LevelMap;
+        SDL_Window* m_Window;
+        SDL_Renderer* m_Renderer;
+        static Engine* s_Instance;
 };
 
-
-#endif //POC_MARIO_PHYSICS_ENGINE_H
+#endif // ENGINE_H

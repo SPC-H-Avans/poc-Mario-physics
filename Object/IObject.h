@@ -1,17 +1,12 @@
-//
-// Created by jhpar on 12-9-2022.
-//
+#ifndef IOBJECT_H
+#define IOBJECT_H
 
-#ifndef POC_MARIO_PHYSICS_IOBJECT_H
-#define POC_MARIO_PHYSICS_IOBJECT_H
+class IObject{
 
-
-class IObject {
-public:
-    virtual void Draw() = 0;
-    virtual void Update(float dt) = 0;
-    virtual void Clean() = 0;
+    public:
+        virtual void Draw()=0;
+        virtual void Update(float dt)=0;
+        virtual void Clean()=0;
 };
 
-
-#endif //POC_MARIO_PHYSICS_IOBJECT_H
+#endif // IOBJECT_H
