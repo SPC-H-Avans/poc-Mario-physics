@@ -5,8 +5,10 @@
 #include "CollisionHandler.h"
 #include "Engine.h"
 
+CollisionHandler *CollisionHandler::s_Instance = nullptr;
+
 CollisionHandler::CollisionHandler() {
-    m_CollisionLayer = (TileLayer *) Engine::GetInstance()->GetMap()->GetLayers().front();
+    m_CollisionLayer = (TileLayer *) Engine::GetInstance()->GetMap()->GetLayers().back();
     m_CollisionTileMap = m_CollisionLayer->GetTileMap();
 }
 

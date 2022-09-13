@@ -42,11 +42,13 @@ bool Engine::Init() {
 
     TextureManager::GetInstance()->Load("player", "Assets/character/anim/idle/spritesheet.png");
     TextureManager::GetInstance()->Load("player_run", "Assets/character/anim/run/spritesheet.png");
+    TextureManager::GetInstance()->Load("player_jump", "Assets/character/anim/jump/spritesheet.png");
+    TextureManager::GetInstance()->Load("player_fall", "Assets/character/anim/fall/spritesheet.png");
     TextureManager::GetInstance()->Load("clouds_background", "Assets/Background/Clouds.png");
 
-    player = new Warrior(new Properties("player", 100, 200, 131, 142));
+    player = new Warrior(new Properties("player", 100, 145, 131, 142));
 
-    Camera::getInstance()->SetTarget(player->GetOrigin());
+    Camera::GetInstance()->SetTarget(player->GetOrigin());
 
     return m_IsRunning = true;
 }
@@ -66,7 +68,7 @@ void Engine::Update() {
     float dt = Timer::GetInstance()->GetDeltaTime();
     player->Update(dt);
     m_LevelMap->Update();
-    Camera::getInstance()->Update(dt);
+    Camera::GetInstance()->Update(dt);
 }
 
 void Engine::Events() {
